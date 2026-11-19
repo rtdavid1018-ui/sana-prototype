@@ -1,0 +1,38 @@
+{
+  "id": "./",
+  "name": "SANA",
+  "short_name": "SANA",
+  "description": "SANA 기기와 연결해 투약, 자격 증명 카드, 카트리지와 크레딧을 확인하는 앱",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F2F3F0",
+  "theme_color": "#F2F3F0",
+  "categories": [
+    "health",
+    "medical"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
