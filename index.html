@@ -1157,12 +1157,12 @@ main .glass:not(.dose){background-color:rgb(255 254 249/.56);
 /* 투약 박스 */
 .dose.glass{background-color:#1d2618;
   box-shadow:inset 0 0 0 1px rgb(236 242 214/.09),0 1px 2px rgb(20 26 14/.16),0 26px 44px -24px rgb(28 36 18/.7)}
-.dose.glass::before{inset:-12% -10%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' preserveAspectRatio='none'%3E%3Cdefs%3E%3Cfilter id='a' x='-50%25' y='-50%25' width='200%25' height='200%25'%3E%3CfeGaussianBlur stdDeviation='34'/%3E%3C/filter%3E%3Cfilter id='b' x='-50%25' y='-50%25' width='200%25' height='200%25'%3E%3CfeGaussianBlur stdDeviation='15'/%3E%3C/filter%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='0' y1='300' x2='400' y2='0'%3E%3Cstop offset='0' stop-color='%23dfe9bd'/%3E%3Cstop offset='.45' stop-color='%23a9bd82'/%3E%3Cstop offset='1' stop-color='%236d8150'/%3E%3C/linearGradient%3E%3ClinearGradient id='w' gradientUnits='userSpaceOnUse' x1='0' y1='300' x2='400' y2='0'%3E%3Cstop offset='0' stop-color='%239cb276'/%3E%3Cstop offset='.5' stop-color='%236f8552'/%3E%3Cstop offset='.8' stop-color='%234a5c37'/%3E%3Cstop offset='1' stop-color='%233c4c2d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M-60 322 C50 300 160 282 245 266 S345 236 380 170 S420 40 480 -10' fill='none' stroke='url%28%23w%29' stroke-width='150' opacity='.7' filter='url%28%23a%29'/%3E%3Cpath d='M-60 322 C50 300 160 282 245 266 S345 236 380 170 S420 40 480 -10' fill='none' stroke='url%28%23g%29' stroke-width='44' opacity='.62' filter='url%28%23b%29'/%3E%3C/svg%3E");background-size:100% 100%;background-repeat:no-repeat;
+.dose.glass::before{inset:0;border-radius:inherit;transform:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' preserveAspectRatio='none'%3E%3Cdefs%3E%3Cfilter id='a' x='-50%25' y='-50%25' width='200%25' height='200%25'%3E%3CfeGaussianBlur stdDeviation='34'/%3E%3C/filter%3E%3Cfilter id='b' x='-50%25' y='-50%25' width='200%25' height='200%25'%3E%3CfeGaussianBlur stdDeviation='15'/%3E%3C/filter%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='0' y1='300' x2='400' y2='0'%3E%3Cstop offset='0' stop-color='%23dfe9bd'/%3E%3Cstop offset='.45' stop-color='%23a9bd82'/%3E%3Cstop offset='1' stop-color='%236d8150'/%3E%3C/linearGradient%3E%3ClinearGradient id='w' gradientUnits='userSpaceOnUse' x1='0' y1='300' x2='400' y2='0'%3E%3Cstop offset='0' stop-color='%239cb276'/%3E%3Cstop offset='.5' stop-color='%236f8552'/%3E%3Cstop offset='.8' stop-color='%234a5c37'/%3E%3Cstop offset='1' stop-color='%233c4c2d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M-60 322 C50 300 160 282 245 266 S345 236 380 170 S420 40 480 -10' fill='none' stroke='url%28%23w%29' stroke-width='150' opacity='.7' filter='url%28%23a%29'/%3E%3Cpath d='M-60 322 C50 300 160 282 245 266 S345 236 380 170 S420 40 480 -10' fill='none' stroke='url%28%23g%29' stroke-width='44' opacity='.62' filter='url%28%23b%29'/%3E%3C/svg%3E");background-size:120% 124%;background-position:50% 50%;background-repeat:no-repeat;
   animation:doseGlow 10s ease-in-out infinite alternate}
 @keyframes doseGlow{
-  0%{transform:translate(-3%,2%) scale(1)}
-  50%{transform:translate(3%,-3%) scale(1.05)}
-  100%{transform:translate(5%,1%) scale(.98)}}
+  0%{background-position:68% 40%;background-size:120% 124%}
+  50%{background-position:32% 66%;background-size:126% 130%}
+  100%{background-position:20% 45%;background-size:118% 122%}}
 /* 필름 입자 — 그라데이션의 띠짐을 숨기고 레퍼런스의 매트한 결을 만든다 */
 .dose.glass::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");background-size:140px 140px;opacity:.07;mix-blend-mode:overlay}
@@ -1236,6 +1236,12 @@ main .glass:not(.dose){background-color:rgb(255 254 249/.56);
   .list>.li[data-sheet="share"]::before{width:34px;height:34px;background-size:16px}
   .list>.li[data-sheet="share"] .v{font-size:12px;padding:6px 10px 6px 8px}
 }
+/* ===== 11.20 — 카드 뒷면 비침 정리 ===================================================================
+   backface-visibility:hidden 만으로는 iOS Safari 등에서 면 안의 자식(따로 그려지는 층)이 숨겨지지 않아,
+   뒤집힌 면의 글자가 거울처럼 반대로 비친다. 보이지 않는 면은 아예 visibility:hidden 으로 감춘다.
+   전환 시점: 회전 곡선(.62s, cubic-bezier(.22,1,.36,1))이 90°를 지나는 0.08s 에 맞춰 바꾼다 */
+.idc-flip .idc-face{transition:opacity .2s,visibility 0s .08s}
+.idc-flip:not(.is-back) .idc-back,.idc-flip.is-back .idc-front{visibility:hidden}
 </style>
 </head>
 <body class="booting">

@@ -1,6 +1,6 @@
 /* SANA offline worker.
    Change VERSION on every release: phones then fetch the new files once and drop the old cache. */
-const VERSION = 'sana-2026-11-19-3';
+const VERSION = 'sana-2026-11-20-1';
 const SHELL = [
   './',
   './index.html',
